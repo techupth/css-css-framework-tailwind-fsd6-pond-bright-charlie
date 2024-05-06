@@ -15,21 +15,47 @@
     </style>
   </head>
 
-  <body>
+  <body class="bg-slate-200 flex justify-center items-center h-screen">
     <!-- Start coding here -->
-    <div>
-      <h1>Login to Website</h1>
+    <div
+      class="bg-white rounded-xl flex flex-col w-[360px] px-[30px] py-[40px]"
+    >
+      <h1 class="text-zinc-600 text-xl mb-[10px]">Login to Website</h1>
 
-      <form>
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Email" />
+      <form class="flex flex-col w-full gap-[8px]">
+        <div class="flex justify-between">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Email"
+            class="border border-zinc-300 p-2 hover:border-violet-300 focus:border-violet-500"
+          />
+        </div>
 
-        <label for="password">Password</label>
-        <input id="password" type="password" placeholder="Password" />
+        <div class="flex justify-between">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            class="border border-zinc-600 p-2 hover:border-violet-300 focus:border-violet-500"
+          />
+        </div>
 
-        <div>
-          <button type="submit">Sign In</button>
-          <button type="submit">Sign Up</button>
+        <div class="flex justify-between pt-[2px]">
+          <button
+            type="submit"
+            class="w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:bg-violet-600 focus:ring focus:ring-violet-300"
+          >
+            Sign In
+          </button>
+          <button
+            type="submit"
+            class="w-36 p-2 rounded-full bg-white text-violet-600 active:bg-violet-100 hover:bg-violet-100 focus:bg-violet-100 focus:ring focus:ring-violet-300"
+          >
+            Sign Up
+          </button>
         </div>
       </form>
     </div>
